@@ -15,18 +15,22 @@
   }
   .dome{ position:absolute; top:-170px; left:50%; transform:translateX(-50%);
     width:420px; height:270px; border-radius:50%; background:rgba(20,24,60,0.35); }
+  .dome{ position:absolute; top:-180px; left:50%; transform:translateX(-50%); width:420px; height:300px; border-radius:50%;
+    background:rgba(255,255,255,0.08); box-shadow:0 0 0 36px rgba(255,255,255,0.03), 0 0 0 72px rgba(255,255,255,0.015); }
   .logo{ position:relative; display:block; margin:40px auto 0; height:64px; filter:brightness(0) invert(1); }
   .kicker{ position:absolute; top:44px; right:48px; padding:10px 22px; border:1px solid rgba(255,255,255,0.25);
     border-radius:999px; font-size:20px; font-weight:700; letter-spacing:0.12em; color:rgba(255,255,255,0.75); }
-  h1{ position:relative; margin:44px 0 32px; font-size:84px; font-weight:800; line-height:1; letter-spacing:-0.01em; }
+  h1{ position:relative; margin:44px 0 32px; font-size:84px; font-weight:800; line-height:1; letter-spacing:0.05em; }
   h1 .heart{ display:inline-block; vertical-align:middle; margin-left:2px; position:relative; top:-6px; }
   .sub{ position:relative; max-width:980px; margin:0 auto; font-size:32px; line-height:1.6; font-weight:500; color:rgba(255,255,255,0.85); }
-  .ekg{ display:block; width:100%; margin:44px 0 40px; opacity:0.6; }
+  .ekg{ display:block; width:72%; margin:44px auto 40px; }
   .pill{ position:relative; display:inline-block; padding:18px 44px; border-radius:999px; background:#24274d;
     font-size:20px; font-weight:700; color:#FFFFFF; }
   .pill .dot{ color:#e67e04; margin:0 16px; }
   @media (max-width:700px){
-    .logo{ height:44px; } .kicker{ top:18px; right:18px; font-size:12px; padding:6px 12px; }
+    .dome{ position:absolute; top:-180px; left:50%; transform:translateX(-50%); width:420px; height:300px; border-radius:50%;
+    background:rgba(255,255,255,0.08); box-shadow:0 0 0 36px rgba(255,255,255,0.03), 0 0 0 72px rgba(255,255,255,0.015); }
+  .logo{ height:44px; } .kicker{ top:18px; right:18px; font-size:12px; padding:6px 12px; }
     h1{ font-size:40px; } .sub{ font-size:16px; } .pill{ font-size:15px; padding:12px 22px; }
     h1 .heart{ width:68px; height:34px; } .sub{ font-size:18px; }
   }
@@ -34,6 +38,7 @@
 </head>
 <body>
   <header class="hero">
+    <div class="dome"></div>
     <img class="logo" src="ivalua-logo.png" alt="Ivalua">
     <span class="kicker">Q3 · 2026</span>
 
@@ -49,9 +54,9 @@
     <svg class="ekg" viewBox="0 0 680 60" aria-hidden="true">
       <defs>
         <linearGradient id="ekgGrad" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stop-color="#00a6ca" stop-opacity="0.15"/>
+          <stop offset="0%" stop-color="#00a6ca" stop-opacity="0.35"/>
           <stop offset="50%" stop-color="#00a6ca" stop-opacity="0.95"/>
-          <stop offset="100%" stop-color="#00a6ca" stop-opacity="0.15"/>
+          <stop offset="100%" stop-color="#00a6ca" stop-opacity="0.35"/>
         </linearGradient>
       </defs>
       <path d="M 0,32 L 42,32 C 47,32 50,22 57,22 C 64,22 67,32 72,32 L 92,32 L 94,36 L 98,-3 L 102,52 L 108,32 C 114,32 122,13 133,13 C 144,13 152,32 158,32 L 224,32 C 229,32 232,22 239,22 C 246,22 249,32 254,32 L 274,32 L 276,36 L 280,-3 L 284,52 L 290,32 C 296,32 304,13 315,13 C 326,13 334,32 340,32 L 406,32 C 411,32 414,22 421,22 C 428,22 431,32 436,32 L 456,32 L 458,36 L 462,-3 L 466,52 L 472,32 C 478,32 486,13 497,13 C 508,13 516,32 522,32 L 588,32 C 593,32 596,22 603,22 C 610,22 613,32 618,32 L 638,32 L 640,36 L 644,-3 L 648,52 L 654,32 L 680,32"
