@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product Pulse Hero</title>
+<style>
+  body{ margin:0; background:#FFFFFF; font-family:Arial, Helvetica, sans-serif; }
+  .hero{
+    position:relative; overflow:hidden; max-width:1184px; margin:0 auto;
+    background:linear-gradient(160deg, #262B55 0%, #3F67C2 100%);
+    border-radius:26px 26px 50% 50% / 26px 26px 60px 60px;
+    text-align:center; color:#FFFFFF; padding:0 24px 34px;
+  }
+  .dome{ position:absolute; top:-170px; left:50%; transform:translateX(-50%);
+    width:420px; height:270px; border-radius:50%; background:rgba(20,24,60,0.35); }
+  .logo{ position:relative; display:block; margin:16px auto 0; height:76px; filter:brightness(0) invert(1); }
+  .kicker{ position:absolute; top:40px; right:56px; padding:12px 28px; border:1.5px solid rgba(255,255,255,0.35);
+    border-radius:999px; font-size:20px; font-weight:700; letter-spacing:0.12em; color:rgba(255,255,255,0.75); }
+  h1{ position:relative; margin:22px 0 22px; font-size:84px; font-weight:900; line-height:1; letter-spacing:-0.01em; }
+  h1 .heart{ display:inline-block; vertical-align:middle; margin-left:10px; position:relative; top:-6px; }
+  .sub{ position:relative; max-width:1080px; margin:0 auto; font-size:28px; line-height:1.55; color:rgba(255,255,255,0.88); }
+  .ekg{ display:block; width:100%; margin:28px 0 22px; }
+  .pill{ position:relative; display:inline-block; padding:18px 44px; border-radius:999px; background:#1F2247;
+    font-size:24px; font-weight:700; color:#FFFFFF; }
+  .pill .dot{ color:#E67E04; margin:0 16px; }
+  @media (max-width:700px){
+    .logo{ height:44px; } .kicker{ top:18px; right:18px; font-size:12px; padding:6px 12px; }
+    h1{ font-size:40px; } .sub{ font-size:16px; } .pill{ font-size:15px; padding:12px 22px; }
+    h1 .heart{ width:44px; height:44px; }
+  }
+</style>
+</head>
+<body>
+  <header class="hero">
+    <div class="dome"></div>
+    <img class="logo" src="ivalua-logo.png" alt="Ivalua">
+    <span class="kicker">Q3 · 2026</span>
+
+    <h1>PRODUCT PULSE<svg class="heart" width="72" height="72" viewBox="0 0 36 36" aria-hidden="true">
+      <circle cx="18" cy="18" r="17" fill="#1D8CB0" stroke="#5CE0E6" stroke-width="1" stroke-opacity="0.6"/>
+      <path d="M18 26c-5-3.7-8.4-6.7-8.4-10.8 0-2.9 2.1-5 4.7-5 1.7 0 3.1 1 3.7 2.3.6-1.3 2-2.3 3.7-2.3 2.6 0 4.7 2.1 4.7 5 0 4.1-3.4 7.1-8.4 10.8z" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M10 18h3.2l1.7-3.4 2.2 5.6 1.7-3.4 1.2 1.2h2.2" fill="none" stroke="#FFFFFF" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg></h1>
+
+    <p class="sub">Keep your finger on the pulse and follow the signals that help you work smarter — from AI that takes action on your behalf to workflows that make everyday tasks easier.</p>
+
+    <svg class="ekg" viewBox="0 0 680 60" aria-hidden="true">
+      <defs>
+        <linearGradient id="ekgGrad" x1="0" y1="0" x2="680" y2="0" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#28A8D1" stop-opacity="0.15"/>
+          <stop offset="50%" stop-color="#5CE0E6" stop-opacity="0.95"/>
+          <stop offset="100%" stop-color="#28A8D1" stop-opacity="0.15"/>
+        </linearGradient>
+      </defs>
+      <path d="M 0,32 L 42,32 C 47,32 50,22 57,22 C 64,22 67,32 72,32 L 92,32 L 94,36 L 98,-3 L 102,52 L 108,32 C 114,32 122,13 133,13 C 144,13 152,32 158,32 L 224,32 C 229,32 232,22 239,22 C 246,22 249,32 254,32 L 274,32 L 276,36 L 280,-3 L 284,52 L 290,32 C 296,32 304,13 315,13 C 326,13 334,32 340,32 L 406,32 C 411,32 414,22 421,22 C 428,22 431,32 436,32 L 456,32 L 458,36 L 462,-3 L 466,52 L 472,32 C 478,32 486,13 497,13 C 508,13 516,32 522,32 L 588,32 C 593,32 596,22 603,22 C 610,22 613,32 618,32 L 638,32 L 640,36 L 644,-3 L 648,52 L 654,32 L 680,32"
+        stroke="url(#ekgGrad)" stroke-width="2.25" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+
+    <span class="pill">Features Available from V182<span class="dot">●</span>5 min read</span>
+  </header>
+</body>
+</html>
