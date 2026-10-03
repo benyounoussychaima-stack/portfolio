@@ -11,7 +11,7 @@
     position:relative; overflow:hidden; max-width:1184px; margin:0 auto;
     background:linear-gradient(160deg, #24274d 0%, #426EC6 100%);
     border-radius:26px 26px 50% 50% / 26px 26px 60px 60px;
-    text-align:center; color:#FFFFFF; padding:0 48px 56px;
+    text-align:center; color:#FFFFFF; padding:0 48px 64px;
   }
   .dome{ position:absolute; top:-170px; left:50%; transform:translateX(-50%);
     width:420px; height:270px; border-radius:50%; background:rgba(20,24,60,0.35); }
@@ -20,11 +20,12 @@
   .logo{ position:relative; display:block; margin:40px auto 0; height:64px; filter:brightness(0) invert(1); }
   .kicker{ position:absolute; top:44px; right:48px; padding:10px 22px; border:1px solid rgba(255,255,255,0.25);
     border-radius:999px; font-size:20px; font-weight:700; letter-spacing:0.12em; color:rgba(255,255,255,0.75); }
-  h1{ position:relative; margin:44px 0 32px; font-size:84px; font-weight:800; line-height:1; letter-spacing:0.05em; }
+  h1{ position:relative; margin:44px 0 32px; font-size:84px; font-weight:800; line-height:1; letter-spacing:0.02em; word-spacing:-0.04em; }
   h1 .heart{ display:inline-block; vertical-align:middle; margin-left:2px; position:relative; top:-6px; }
   .sub{ position:relative; max-width:980px; margin:0 auto; font-size:32px; line-height:1.6; font-weight:500; color:rgba(255,255,255,0.85); }
   .ekg{ display:block; width:72%; margin:44px auto 40px; }
-  .pill{ position:relative; display:inline-block; padding:18px 44px; border-radius:999px; background:#24274d;
+  .banner{ position:relative; max-width:1184px; margin:0 auto; padding-bottom:30px; text-align:center; }
+  .pill{ position:absolute; bottom:0; left:50%; transform:translateX(-50%); white-space:nowrap; display:inline-block; padding:18px 44px; border-radius:999px; background:#24274d;
     font-size:20px; font-weight:700; color:#FFFFFF; }
   .pill .dot{ color:#e67e04; margin:0 16px; }
   @media (max-width:700px){
@@ -37,6 +38,7 @@
 </style>
 </head>
 <body>
+  <div class="banner">
   <header class="hero">
     <div class="dome"></div>
     <img class="logo" src="ivalua-logo.png" alt="Ivalua">
@@ -63,7 +65,8 @@
         stroke="url(#ekgGrad)" stroke-width="2.25" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 
-    <span class="pill">Features Available from V182<span class="dot">●</span>5 min read</span>
   </header>
+  <span class="pill">Features Available from V182<span class="dot">●</span>5 min read</span>
+  </div>
 </body>
 </html>
